@@ -5,9 +5,9 @@ jobs:
     runs-on: ubuntu-latest
     steps: 
       - name: checkout repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
       - name: use node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
           node-version: '20.x'
       - run: npm install
@@ -18,9 +18,9 @@ jobs:
     runs-on: ubuntu-latest
     steps: 
       - name: checkout repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
       - name: use node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
           node-version: '20.x'
       - run: npm install
@@ -42,11 +42,11 @@ jobs:
     
     steps:
       - name: checkout repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
       - name: use node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
           node-version: '20.x'
       - name: configure github pages
