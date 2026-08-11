@@ -12,7 +12,7 @@ jobs:
       - name: use node.js
         uses: actions/setup-node@v5
         with: 
-          node-version: '20.x'
+          node-version: '22.x'
       - run: npm install
       - run: npm run build
 
@@ -27,7 +27,7 @@ jobs:
       - name: use node.js
         uses: actions/setup-node@v5
         with: 
-          node-version: '20.x'
+          node-version: '22.x'
       - run: npm install
       - run: npm test
 
@@ -54,7 +54,7 @@ jobs:
       - name: use node.js
         uses: actions/setup-node@v5
         with: 
-          node-version: '20.x'
+          node-version: '22.x'
       - name: configure github pages
         uses: actions/configure-pages@v4
         with:
